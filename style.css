@@ -22,3 +22,19 @@ body {
     border: 1px solid #eee;
     background-color: white;
 }
+
+.resize {
+    background-color: #03fce8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif
+}
+
+.resize:hover {
+    background-color: #03d4c4;
+}
