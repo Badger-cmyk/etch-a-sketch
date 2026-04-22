@@ -1,4 +1,5 @@
 const container = document.querySelector('.container')
+const resizeBtn = document.querySelector('.resize')
 
 
 function getRandomColor(){
@@ -32,5 +33,25 @@ function createGrid(n){
     })
 
 }
+
+resizeBtn.addEventListener('click', () => {
+    let size = prompt('Please enter the numbers of squares per side you want.(Max: 100)')
+
+    if(size === null || size === ''){
+        return
+    }
+
+    size = Number(size)
+
+    if(isNaN(size) || size < 1 || size > 100){
+        alert('Enter a valid number from 1 to 100')
+    }
+    else {
+        container.textContent = ''
+        createGrid(size)
+    }
+
+})
+
 
 createGrid(16)
