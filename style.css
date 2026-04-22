@@ -16,3 +16,9 @@ body {
     height: 640px;
     width: 640px;
 }
+
+.cell {
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    background-color: white;
+}
