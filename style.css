@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+.title {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
 
 .container {
     border: 1px solid #222;
